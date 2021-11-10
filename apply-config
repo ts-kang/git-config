@@ -1,0 +1,7 @@
+#!/bin/sh
+set -e
+
+cp ~/.gitconfig ./config
+git add ./config
+git commit -m${1:-'.'}
+git push origin HEAD
