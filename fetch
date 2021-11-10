@@ -5,6 +5,7 @@ git fetch origin
 if ! cmp -s -- ~/.gitconfig config; then
     cp ~/.gitconfig config
     git add config && git commit -m'tmp'
+    git branch "tmp-$(date +%s)"
     git reset --hard HEAD~
 fi
 git merge FETCH_HEAD --ff-only
