@@ -3,5 +3,5 @@ set -e
 
 cp ~/.gitconfig ./config
 git add ./config
-git commit -m${1:-'.'}
+git commit -m${1:-'autocommit: update config'}
 git push origin HEAD
