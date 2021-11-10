@@ -1,0 +1,10 @@
+[user]
+	email = null@ieee.org
+	name = Taesu Kang
+[alias]
+        adog = log --all --decorate --oneline --graph
+	wip = !git add -A && git commit -m'wip'
+[init]
+	defaultBranch = main
+[pull]
+	rebase = true
