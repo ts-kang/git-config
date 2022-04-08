@@ -2,8 +2,9 @@
 	email = null@ieee.org
 	name = Taesu Kang
 [alias]
-        adog = log --all --decorate --oneline --graph
+    adog = log --all --decorate --oneline --graph
 	wip = !git add -A && git commit -m'wip'
+	checkout-soft = "!f() { git checkout --detach && git reset \"$1\" && git checkout \"$1\"; }; f"
 [init]
 	defaultBranch = main
 [pull]
